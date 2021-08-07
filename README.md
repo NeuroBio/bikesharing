@@ -1,14 +1,14 @@
 # Bikesharing: a pitch to open a bike sharing company in Des Moines
 
 ## Overview
-Bike sharing is a successful service in New York city and may also make for a profitable business in Des Moines.  The linked to Tableau document displays information about usage of bikes in New York City collected by CitiBike to convince potential investors that this business model will be feasible in Des Moines.
+Bike sharing is a successful service in New York city and may also make for a profitable business model in Des Moines.  The linked to Tableau document displays information about usage of bikes in New York City collected by CitiBike to convince potential investors that this business model will be feasible in Des Moines.
 
 ## Results
 ### Resources
 [Original Data](https://s3.amazonaws.com/tripdata/201908-citibike-tripdata.csv.zip)
 
 ### Analysis
-The data linked to above was downloaded and used as is with two exceptions.  1) The tripduration column was provided as an integer.  A [python script](NYC_Citibike_Challenge.ipynb) was used to convert this column into datetime format.  2) The gender column was provided as an integer, where 0 = unknown, 1 = male, and 2 = female.  A Tableau calculated field converting the numbers to their corresponding string value as described above was used to create the gender strings column.  All figures were made using Tableau.  For most plots, unknown gender was omitted, because this group accounted for a relatively small number of users.
+The data linked to above was downloaded and used as is with two exceptions.  1) The tripduration column was provided as an integer.  A [python script](NYC_Citibike_Challenge.ipynb) was used to convert this column into datetime format.  2) The gender column was provided as an integer, where 0 = unknown, 1 = male, and 2 = female.  A Tableau calculated field converting the numbers to their corresponding string value as described above was used to create the gender strings column.  All figures were made using Tableau.  For most plots, unknown gender was omitted, because this group accounted for a relatively small number of CitiBike users.
 
 ### Tableau Link
 [Tableau Viz](https://public.tableau.com/views/Module14ChallengeBikeShareViability/BikeShareViability?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
@@ -46,7 +46,7 @@ The data linked to above was downloaded and used as is with two exceptions.  1) 
 
 ![Fig-7](resources/gender_breakdown.png)
 
-**Figure 7:** Breakdown of users by gender.  There are more male users of the New York city Bike share Citibike.
+**Figure 7:** Breakdown of users by gender.  There are more male users of the New York City bike share Citibike.
 
 
 ![Fig-8](resources/gender_usertype_breakdown.png)
@@ -58,7 +58,7 @@ The data linked to above was downloaded and used as is with two exceptions.  1) 
 
 ### This Analysis
 
-The data show that the majority of Citibike rides are taken by workday commuters, thus the success of bike sharing is New York City would not be expected to be a New York City-specific phenomenon.  Any city wherein commuters live within biking distance from work would be able to support such a business.  Given that the majority of bike rides last less than 30 minutes, within this timeframe is a suitable definition for “within biking distance.”  Of note is the gender disparity between males and females.  Males were much more likely to be subscribers and are likely to make up the majority of non-subscribing customers.  Given that both males and females work at approximately equal rates in the modern era, it seems like bike sharing should be a viable option for females at a higher frequency that what was observed.  Perhaps this is because females are still expected to fulfill traditionally female tasks (e.g. dropping of children at school or daycare) which requires females to need vehicles more than males.  However, it is also possible that bike sharing was more heavily marketed towards males in New York City.  If this is the case, then the Des Moines business could launch with the expectation of marketing more equally to working males and females to receive a larger number of customers overall than would be obtainable by simply copying the New York City model.  In total, bike sharing is expected to be viable in Des Moines and the new company will be able to start with an advantage in understating the needs of its future customers based on the analysis done here.
+The data show that the majority of Citibike rides are taken by workday commuters, thus the success of bike sharing is New York City would not be expected to be a New York City-specific phenomenon related to heavy tourist in the city.  Any city wherein commuters live within biking distance from work would be able to support such a business.  Given that the majority of bike rides last less than 30 minutes, within this timeframe is a suitable definition for “within biking distance.”  Of note is the gender disparity between males and females.  Males were much more likely to be subscribers and are likely to make up the majority of non-subscribing customers.  Given that both males and females work at approximately equal rates in the modern era, it seems like bike sharing should be a viable option for females at a higher frequency that what was observed.  Perhaps this is because females are still expected to fulfill traditionally female tasks (e.g. dropping of children at school or daycare) which requires females to need vehicles more than males.  However, it is also possible that bike sharing was more heavily marketed towards males in New York City.  If this is the case, then the Des Moines business could launch with the expectation of marketing more equally to working males and females to receive a larger number of customers overall than would be obtainable by simply copying the New York City model.  In total, bike sharing is expected to be viable in Des Moines and the new company will be able to start with an advantage in understating the needs of its future customers based on the analysis done here.
 
 ### For the Future
 
